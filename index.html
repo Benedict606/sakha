@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Sakhâ, Food Banking Initiative </title>
+  <title data-key="title">Sakhâ, Food Banking Initiative </title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -41,28 +41,39 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
 
+    
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/sakha_logo.png" alt="" style="">
+          <img src="assets/img/sakha_logo.png" alt="">
+        
         <!-- <h1 class="sitename">Sakha </h1><span> FBI</span> -->
-
       </a>
+  
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero" class="active">Acceuil</a></li>
-          <li><a href="index.html#about">Apropos</a></li>
-          <li><a href="index.html#services">Objectifs</a></li>
-          <li><a href="index.html#raisons">Raisons</a></li>
-          <li><a href="index.html#portfolio">Activités</a></li>
+          <li><a href="index.html#hero" class="active" data-key="home">Accueil</a></li>
+          <li><a href="index.html#about" data-key="about">A propos</a></li>
+          <li><a href="index.html#services" data-key="objectifs">Objectifs</a></li>
+          <li><a href="index.html#raisons" data-key="reasons">Raisons</a></li>
+          <li><a href="index.html#portfolio" data-key="activities">Activités</a></li>
       
-          <li><a href="index.html#team">Equipe</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <!-- <li><a href="index.html#team" data-key="team">Equipe</a></li> -->
+          <li><a href="index.html#contact" data-key="contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
+      
+    <div>
+      <select id="language-selector" style="background-color: transparent; color: #3DA8C0; border-width: 0; font-size:larger; margin-right: 2rem;">
+        <option value="en">EN</option>
+        <option value="fr">FR</option>
+      </select>
 
-      <a class="btn-getstarted" href="index.html#about">Qui sommes-nous ?</a>
+    
+    </div>
+    <a class="btn-getstarted" href="index.html#about" data-key="who_we_are">Qui sommes-nous ?</a>
+     
 
     </div>
   </header>
@@ -79,13 +90,13 @@
           <div class="col-lg-10">
             <h2 data-aos="fade-up" data-aos-delay="100"> <span style="color: #3DA8C0;">SAKHÂ</span>, Food Banking Initiative(FBI) Asbl</h2>
             <br>
-            <p data-aos="fade-up" data-aos-delay="200">Ensemble, construisons un Congo sans faim.</p>
-            <p data-aos="fade-up" data-aos-delay="200">SAKHÂ FBI, la première banque alimentaire de l’Est de la RDC, lutte contre la faim et la malnutrition.</p>
+            <p data-aos="fade-up" data-aos-delay="200" data-key="slogant" >Ensemble, construisons un Congo sans faim.</p>
+            <p data-aos="fade-up" data-aos-delay="200" data-key="slogant_2">SAKHÂ FBI, la première banque alimentaire de l’Est de la RDC, lutte contre la faim et la malnutrition.</p>
           </div>
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
             <form action="forms/newsletter.php" method="post" class="php-email-form">
               
-              <div class="sign-up-form"><input type="email" name="email"><button onclick="openGmail()" class="btn-get-started-c">S'enregistrer</button></div>
+              <div class="sign-up-form"><input type="email" name="email"><button onclick="openGmail()" class="btn-get-started-c" data-key="save_as">S'enregistrer</button></div>
               <!-- <div class="loading">Loading</div>
               <div class="error-message"></div>
               <div class="sent-message">Your subscription request has been sent. Thank you!</div> -->
@@ -125,12 +136,12 @@
         <div class="row align-items-xl-center gy-5">
 
           <div class="col-xl-5 content">
-            <h3>Nous sommes</h3>
+            <h3 data-key="we_are">Nous sommes</h3>
             <br>
-            <h2>Un Congo où la faim n'a pas sa place avec Sakha FBI</h2>
+            <h2 data-key="we_are_congo">Un Congo où la faim n'a pas sa place avec Sakha FBI</h2>
             <br>
-            <p>L’Initiative Sakha est une organisation pionnière dans la lutte contre la faim et la malnutrition dans l’Est de la RDC. Première banque alimentaire officielle de la région, elle relie un monde d’abondance à un monde de besoins en collectant et redistribuant des denrées alimentaires grâce à un réseau d’acteurs locaux et internationaux.</p>
-            <p>Notre mission est de réduire l’insécurité alimentaire et d’autonomiser les communautés grâce à des solutions durables, incluant l’aide alimentaire, l’éducation nutritionnelle, et la promotion de pratiques agricoles résilientes.</p>
+            <p data-key="we_are_1">L’Initiative Sakha est une organisation pionnière dans la lutte contre la faim et la malnutrition dans l’Est de la RDC. Première banque alimentaire officielle de la région, elle relie un monde d’abondance à un monde de besoins en collectant et redistribuant des denrées alimentaires grâce à un réseau d’acteurs locaux et internationaux.</p>
+            <p data-key="we_are_2">Notre mission est de réduire l’insécurité alimentaire et d’autonomiser les communautés grâce à des solutions durables, incluant l’aide alimentaire, l’éducation nutritionnelle, et la promotion de pratiques agricoles résilientes.</p>
             <br>
             <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
           </div>
@@ -144,7 +155,7 @@
                 <div class="icon-box">
                   <i class="bi bi-radar"></i>
                   <h3>Vision</h3>
-                  <p>Construire un Congo ou la faim et la manultrition n'ont plus de place. </p>
+                  <p data-key="vision">Construire un Congo ou la faim et la manultrition n'ont plus de place. </p>
                 </div>
               </div> <!-- End Icon Box -->
 
@@ -152,23 +163,23 @@
                 <div class="icon-box">
                   <i class="bi bi-command"></i>
                   <h3>Mission</h3>
-                  <p>Réduire l’insécurité alimentaire en garantissant un accès équitable</p>
+                  <p data-key="mission">Réduire l’insécurité alimentaire en garantissant un accès équitable</p>
                 </div>
               </div> <!-- End Icon Box -->
 
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
                 <div class="icon-box">
                   <i class="bi bi-stars"></i>
-                  <h3>Valeurs</h3>
-                  <p>Solidarité, durabilité et impact sont au coeur de nos engagements quotidiens.</p>
+                  <h3 data-key="values">Valeurs</h3>
+                  <p data-key="values_1">Solidarité, durabilité et impact sont au coeur de nos engagements quotidiens.</p>
                 </div>
               </div> <!-- End Icon Box -->
               
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
                 <div class="icon-box">
                   <i class="bi bi-people"></i>
-                  <h3>Engagement social</h3>
-                  <p>Autonomiser les communautés vulnérables pour qu'elles deviennent résilientes face à la faim.</p>
+                  <h3 data-key="engagement">Engagement social</h3>
+                  <p data-key="engagement_1">Autonomiser les communautés vulnérables pour qu'elles deviennent résilientes face à la faim.</p>
                 </div>
               </div>
             </div>
@@ -186,7 +197,7 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Banque alimentaire</h2>
+        <h2 data-key="bank_title">Banque alimentaire</h2>
        
       </div><!-- End Section Title -->
 
@@ -194,15 +205,15 @@
 
         <div class="row gy-4 align-items-center features-item">
           <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-            <h3>C'est quoi une banque alimentaire ?</h3>
+            <h3 data-key="bank">C'est quoi une banque alimentaire ?</h3>
             <br>
-            <p>
+            <p data-key="bank_1">
               Une banque alimentaire est une organisation qui collecte, stocke et redistribue des denrées alimentaires aux personnes en situation d'insécurité alimentaire.
             </p>
-            <p>
+            <p data-key="bank_2">
               Elle joue un rôle d'intermédiaire entre les producteurs (agriculteurs, industries agroalimentaires, supermarchés, restaurants, etc.) et les bénéficiaires (familles vulnérables, associations caritatives, centres de nutrition, camps de réfugiés, etc.).
             </p>
-            <a href="#" class="btn btn-get-started">Voir plus</a>
+         
           </div>
           <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
             <div class="image-stack">
@@ -220,15 +231,14 @@
             <!-- <img src="assets/img/foodBaking.PNG" class="img-fluid" alt=""> -->
           </div>
           <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
-            <h3>Comment fonctionne une banque alimentaire ?</h3>
+            <h3 data-key="bank_fonct_3">Comment fonctionne une banque alimentaire ?</h3>
            
             <ul>
-              <li><i class="bi bi-check"></i> <span>Collecte des denrées : Les aliments sont récupérés auprès des agriculteurs, des entreprises agroalimentaires, des supermarchés, des restaurants et des particuliers. Il s'agit souvent de produits invendus mais encore consommables.</span></li>
-              <li><i class="bi bi-check"></i><span>Stockage et gestion : Les denrées sont triées, stockées et gérées pour garantir leur sécurité alimentaire.</span></li>
-              <li><i class="bi bi-check"></i><span>Distribution : Les aliments sont redistribués aux associations, ONG, centres de nutrition et bénéficiaires finaux sous forme de colis alimentaires ou de repas.</span></li>
-              
+              <li><i class="bi bi-check"></i> <span data-key="bank_fonct_3_1">Collecte des denrées : Les aliments sont récupérés auprès des agriculteurs, des entreprises agroalimentaires, des supermarchés, des restaurants et des particuliers. Il s'agit souvent de produits invendus mais encore consommables.</span></li>
+              <li><i class="bi bi-check"></i><span data-key=" bank_fonct_3_2">Stockage et gestion : Les denrées sont triées, stockées et gérées pour garantir leur sécurité alimentaire.</span></li>
+              <li><i class="bi bi-check"></i><span data-key="bank_fonct_3_3">Distribution : Les aliments sont redistribués aux associations, ONG, centres de nutrition et bénéficiaires finaux sous forme de colis alimentaires ou de repas.</span></li>
             </ul>
-            <a href="#" class="btn btn-get-started align-self-start">Voir plus</a>
+            
           </div>
         </div><!-- Features Item -->
 
@@ -250,28 +260,28 @@
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="450" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Personnes aidés</p>
+              <p data-key="helpers">Personnes aidés</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="300" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Quantité de nourriture distribuée(Kg)</p>
+              <p data-key="quantity">Quantité de nourriture distribuée(Kg)</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Réseaux communautaires crées</p>
+              <p data-key="network">Réseaux communautaires crées</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
               <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Impact(%)</p>
+              <p data-key="impact">Impact(%)</p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -286,8 +296,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Objectifs</h2>
-        <p>Nos objectifs pour un avenir meilleur</p>
+        <h2 data-key="object">Objectifs</h2>
+        <p data-key="object_1">Nos objectifs pour un avenir meilleur</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -298,8 +308,8 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-house-door"></i></div>
               <div>
-                <h4 class="title"><a href="index.html#services" class="stretched-link">Alimentation pour tous</a></h4>
-                <p class="description">Augmenter le pourcentage de personnes en situation de crise alimentaire dans l’Est de la RDC qui bénéficient d’un accès rapide à une alimentation de qualité de 0% à 75% d’ici 2040.</p>
+                <h4 class="title"><a href="index.html#services" class="stretched-link" data-key="aliment">Alimentation pour tous</a></h4>
+                <p class="description" data-key="aliment_1">Augmenter le pourcentage de personnes en situation de crise alimentaire dans l’Est de la RDC qui bénéficient d’un accès rapide à une alimentation de qualité de 0% à 75% d’ici 2040.</p>
               </div>
             </div>
           </div>
@@ -309,8 +319,8 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-people"></i></div>
               <div>
-                <h4 class="title"><a href="index.html#services" class="stretched-link">Réseaux communautaires</a></h4>
-                <p class="description">Établir 10 réseaux communautaires de production et de distribution alimentaire dans l’est de la RDC d’ici 2030 pour améliorer la sécurité alimentaire et autonomiser les communautés locales.</p>
+                <h4 class="title"><a href="index.html#services" class="stretched-link" data-key="netcom">Réseaux communautaires</a></h4>
+                <p class="description" data-key="netcom_1">Établir 10 réseaux communautaires de production et de distribution alimentaire dans l’est de la RDC d’ici 2030 pour améliorer la sécurité alimentaire et autonomiser les communautés locales.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -319,8 +329,8 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-minecart-loaded"></i></div>
               <div>
-                <h4 class="title"><a href="index.html#services" class="stretched-link">Réduction des pertes</a></h4>
-                <p class="description">Réduire de 20 % d’ici 2035 les scores moyens quotidiens d’insécurité alimentaire et de gaspillage alimentaire, basés sur des outils d’évaluation validés, dans l’est de la RDC.</p>
+                <h4 class="title"><a href="index.html#services" class="stretched-link" data-key="loseRed">Réduction des pertes</a></h4>
+                <p class="description" data-key="loseRed_1">Réduire de 20 % d’ici 2035 les scores moyens quotidiens d’insécurité alimentaire et de gaspillage alimentaire, basés sur des outils d’évaluation validés, dans l’est de la RDC.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -329,8 +339,8 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-person-arms-up"></i></div>
               <div>
-                <h4 class="title"><a href="index.html#services" class="stretched-link">Femmes autonomes</a></h4>
-                <p class="description">Autonomiser économiquement 400 femmes chaque année pour les aider à surmonter la pauvreté et à acquérir des moyens de subsistance résilients.</p>
+                <h4 class="title"><a href="index.html#services" class="stretched-link" data-key="women">Femmes autonomes</a></h4>
+                <p class="description" data-key="women">Autonomiser économiquement 400 femmes chaque année pour les aider à surmonter la pauvreté et à acquérir des moyens de subsistance résilients.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -339,8 +349,8 @@
             <div class="service-item d-flex">
               <div class="icon flex-shrink-0"><i class="bi bi-graph-up-arrow"></i></div>
               <div>
-                <h4 class="title"><a href="index.html#services" class="stretched-link">Agriculture durable</a></h4>
-                <p class="description">Promouvoir des pratiques agricoles durables et diversifiées qui permettent aux agriculteurs de s’adapter au changement climatique, d’augmenter la production locale et de soutenir le système des banques alimentaires .</p>
+                <h4 class="title"><a href="index.html#services" class="stretched-link" data-key="durable">Agriculture durable</a></h4>
+                <p class="description" data-key="durable_1">Promouvoir des pratiques agricoles durables et diversifiées qui permettent aux agriculteurs de s’adapter au changement climatique, d’augmenter la production locale et de soutenir le système des banques alimentaires.</p>
               </div>
             </div>
           </div><!-- End Service Item -->
@@ -358,20 +368,20 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Raisons</h2>
-        <p>Sakhâ FBI, tire sa fondation des multiples questions et raisons.</p>
+        <h2 data-key="reasons">Raisons</h2>
+        <p data-key="reasons_2c">Sakhâ FBI, tire sa fondation des multiples questions et raisons.</p>
       </div><!-- End Section Title -->
 
       <div class="container">
 
         <div class="row gy-4 align-items-center features-item">
           <div class="col-lg-5 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-            <h3>Notre champ d'action</h3>
+            <h3 data-key="filied">Notre champ d'action</h3>
             <br>
-            <p>
+            <p data-key="filied_1">
               Nous concentrons nos efforts sur les populations les plus vulnérables : les enfants souffrant de malnutrition, les mères enceintes et allaitantes, ainsi que les réfugiés. Notre objectif est de prévenir les conséquences graves de la faim et de la malnutrition, telles que les décès prématurés, le retard de croissance, les maladies chroniques, la baisse des résultats scolaires et l’improductivité.
             </p>
-            <a href="#" class="btn btn-get-started">Voir plus</a>
+
           </div>
           <div class="col-lg-7 order-1 order-lg-2 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
             <div class="image-stack">
@@ -386,14 +396,14 @@
             <img src="assets/img/bgc.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-5 d-flex justify-content-center flex-column" data-aos="fade-up">
-            <h3>Pourquoi y a-t-il de l'incécurité alimentaire ?</h3>
-            <p>Les causes de l’insécurité alimentaire en RDC sont multiples et varient largement selon les provinces (régions). Certaines régions :</p>
+            <h3 data-key="what">Pourquoi y a-t-il de l'incécurité alimentaire ?</h3>
+            <p data-key="cause">Les causes de l’insécurité alimentaire en RDC sont multiples et varient largement selon les provinces (régions). Certaines régions :</p>
             <ul>
-              <li><i class="bi bi-check"></i> <span>Les difficultés de production : fortes pluies et inondations, insuffisance de main d’œuvre, maladies des plantes, épidémies de ravageurs, manque d'accès à des semences et à des engrais de bonne qualité en quantité suffisante et accès limité aux machines.</span></li>
-              <li><i class="bi bi-check"></i><span> Dans les vastes terres arables et fertiles où la production agricole est abondante, les problèmes sont principalement dus à la violence ou à l’insécurité/au conflit, au mauvais état des routes reliant.</span></li>
+              <li><i class="bi bi-check"></i> <span data-key="cause_1">Les difficultés de production : fortes pluies et inondations, insuffisance de main d’œuvre, maladies des plantes, épidémies de ravageurs, manque d'accès à des semences et à des engrais de bonne qualité en quantité suffisante et accès limité aux machines.</span></li>
+              <li><i class="bi bi-check"></i><span data-key="cause_2"> Dans les vastes terres arables et fertiles où la production agricole est abondante, les problèmes sont principalement dus à la violence ou à l’insécurité/au conflit, au mauvais état des routes reliant.</span></li>
               
             </ul>
-            <a href="#" class="btn btn-get-started align-self-start">Voir plus</a>
+
           </div>
         </div><!-- Features Item -->
 
@@ -410,11 +420,11 @@
   
             <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
               <div class="content px-xl-5">
-                <h3><span><strong>Questions</strong> qui restent sans réponse </span></h3>
-                <p>
+                <h3><span><strong data-key="ask">Questions</strong> qui restent sans réponse </span></h3>
+                <p data-key="ask_1">
                   La lutte contre l'insécurité alimentaire ne se limite pas à la production et à la distribution des aliments. Elle implique également une réflexion sur la gestion des ressources disponibles et la réduction du gaspillage. 
                 </p>
-                <p>
+                <p data-key="ask_2">
                   Alors que des millions de personnes souffrent de la faim, une quantité considérable de nourriture est perdue ou jetée chaque jour. Comprendre les causes et les étapes de cette perte est essentiel pour mettre en place des solutions efficaces et durables.
                 </p>
               </div>
@@ -424,25 +434,25 @@
   
               <div class="faq-container">
                 <div class="faq-item faq-active">
-                  <h3><span class="num">1.</span> <span>Peut-on parler de gaspillage alimentaire ou de perte alimentaire ?</span></h3>
+                  <h3><span class="num">1.</span> <span data-key="gaspillage">Peut-on parler de gaspillage alimentaire ou de perte alimentaire ?</span></h3>
                   <div class="faq-content">
-                    <p>L’une des premières distinctions à établir est celle entre gaspillage et perte alimentaire. Ces deux phénomènes, bien que liés, n’interviennent pas au même stade de la chaîne alimentaire. Quelles sont les différences entre ces deux concepts et comment influencent-ils la disponibilité des ressources alimentaires ?</p>
+                    <p data-key="gaspillage_1">L’une des premières distinctions à établir est celle entre gaspillage et perte alimentaire. Ces deux phénomènes, bien que liés, n’interviennent pas au même stade de la chaîne alimentaire. Quelles sont les différences entre ces deux concepts et comment influencent-ils la disponibilité des ressources alimentaires ?</p>
                   </div>
                   <i class="faq-toggle bi bi-chevron-right"></i>
                 </div><!-- End Faq item-->
   
                 <div class="faq-item">
-                  <h3><span class="num">2.</span> <span>Quelle quantité de produits alimentaires est gaspillée ou perdue ?</span></h3>
+                  <h3><span class="num">2.</span> <span data-key="qnte">Quelle quantité de produits alimentaires est gaspillée ou perdue ?</span></h3>
                   <div class="faq-content">
-                    <p>La quantité de nourriture gaspillée ou perdue chaque année reste une question cruciale. Combien de tonnes de denrées alimentaires ne parviennent jamais aux consommateurs ? Quelles sont les principales causes de cette perte et comment les mesurer de manière fiable ?</p>
+                    <p data-key="qnte_1">La quantité de nourriture gaspillée ou perdue chaque année reste une question cruciale. Combien de tonnes de denrées alimentaires ne parviennent jamais aux consommateurs ? Quelles sont les principales causes de cette perte et comment les mesurer de manière fiable ?</p>
                   </div>
                   <i class="faq-toggle bi bi-chevron-right"></i>
                 </div><!-- End Faq item-->
   
                 <div class="faq-item">
-                  <h3><span class="num">3.</span> <span>À quelles étapes faut-il intervenir pour s’attaquer efficacement au problème ?</span></h3>
+                  <h3><span class="num">3.</span> <span data-key="steps">À quelles étapes faut-il intervenir pour s’attaquer efficacement au problème ?</span></h3>
                   <div class="faq-content">
-                    <p>Identifier les moments clés où les pertes alimentaires surviennent est essentiel pour élaborer des stratégies de réduction efficaces. Quels sont les maillons de la chaîne d’approvisionnement où ces pertes sont les plus importantes ? Comment les acteurs impliqués peuvent-ils adapter leurs pratiques pour minimiser ces pertes et optimiser l’utilisation des ressources ?</p>
+                    <p data-key="steps_1">Identifier les moments clés où les pertes alimentaires surviennent est essentiel pour élaborer des stratégies de réduction efficaces. Quels sont les maillons de la chaîne d’approvisionnement où ces pertes sont les plus importantes ? Comment les acteurs impliqués peuvent-ils adapter leurs pratiques pour minimiser ces pertes et optimiser l’utilisation des ressources ?</p>
                   </div>
                   <i class="faq-toggle bi bi-chevron-right"></i>
                 </div><!-- End Faq item-->
@@ -461,8 +471,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Nos Activités</h2>
-        <p>Nos activités se sont déroulées dans des hôpitaux, des orphélinats et dans des camps de réfugiés</p>
+        <h2 data-key="our_activities">Nos Activités</h2>
+        <p data-key="our_activities_1">Nos activités se sont déroulées dans des hôpitaux, des orphélinats et dans des camps de réfugiés</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -578,13 +588,13 @@
   
 
     <!-- Team Section -->
-    <section id="team" class="team section light-background">
 
-      <!-- Section Title -->
+    <!-- <section id="team" class="team section light-background">
+
       <div class="container section-title" data-aos="fade-up">
-        <h2>Equipe</h2>
-        <p>Voici les membres de la  coordination et de l'éxécution de Sakhâ FBI</p>
-      </div><!-- End Section Title -->
+        <h2 data-key="team">Equipe</h2>
+        <p data-key="team_1">Voici les membres de la  coordination et de l'éxécutif de Sakhâ FBI</p>
+      </div>
 
       <div class="container">
 
@@ -592,7 +602,7 @@
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="100">
             <div class="member-img">
-              <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/josue.jpg" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter-x"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -601,15 +611,15 @@
               </div>
             </div>
             <div class="member-info text-center">
-              <h4>Joshua Mwambali Aganze</h4>
-              <span>Président de Sakhâ FBI</span>
-              <p>Médecin de formation, chef coordination</p>
+              <h4>Josué Mwambali</h4>
+             
+              <p>Président du Conseil d'Administration & Co-Fondateur</p>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="200">
             <div class="member-img">
-              <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/Emmanuel.jpg" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter-x"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -618,15 +628,14 @@
               </div>
             </div>
             <div class="member-info text-center">
-              <h4>Emmanuel Tumsifu</h4>
-              <span>Chef des opérations et logistique</span>
-              <p>Labore ipsam sit consequatur exercitationem rerum laboriosam laudantium aut quod dolores exercitationem ut</p>
+              <h4>Emmanuel TUMSIFU</h4>
+              <p>Directeur des Opérations et Logistique</p>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="300">
             <div class="member-img">
-              <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/aline.jpg" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter-x"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -635,15 +644,14 @@
               </div>
             </div>
             <div class="member-info text-center">
-              <h4>Bénédict Lubembela</h4>
-              <span>Exécution opérations et logistique</span>
-              <p>Ingénieur Logiciel</p>
+              <h4>RUVUNANGIZA Mukerenge Aline</h4>
+              <p>Assistante éxécutive</p>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="400">
             <div class="member-img">
-              <img src="assets/img/team/team-4.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/richter.jpg" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter-x"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -652,15 +660,15 @@
               </div>
             </div>
             <div class="member-info text-center">
-              <h4>Amanda Jepson</h4>
-              <span>Accountant</span>
-              <p>Magni voluptatem accusamus assumenda cum nisi aut qui dolorem voluptate sed et veniam quasi quam consectetur</p>
+              <h4>SOBGOUM JIOPE JARDEL Richter</h4>
+             
+              <p>Coordonnateur</p>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="500">
             <div class="member-img">
-              <img src="assets/img/team/team-5.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/ibrahim.jpg" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter-x"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -669,15 +677,15 @@
               </div>
             </div>
             <div class="member-info text-center">
-              <h4>Brian Doe</h4>
-              <span>Marketing</span>
-              <p>Qui consequuntur quos accusamus magnam quo est molestiae eius laboriosam sunt doloribus quia impedit laborum velit</p>
+              <h4>KITALEBE RUKUKUYE Ibrahim</h4>
+              
+              <p>Trésorerie, suivi et évaluation</p>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
           <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
             <div class="member-img">
-              <img src="assets/img/team/team-6.jpg" class="img-fluid" alt="">
+              <img src="assets/img/team/Edguard.jpg" class="img-fluid" alt="">
               <div class="social">
                 <a href="#"><i class="bi bi-twitter-x"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -686,17 +694,32 @@
               </div>
             </div>
             <div class="member-info text-center">
-              <h4>Josepha Palas</h4>
-              <span>Operation</span>
-              <p>Sint sint eveniet explicabo amet consequatur nesciunt error enim rerum earum et omnis fugit eligendi cupiditate vel</p>
+              <h4>Edgard MUGANZA MWANDO</h4>
+
+              <p>Responsable du département de développement des ressources</p>
             </div>
-          </div><!-- End Team Member -->
+          </div>
 
+          <div class="col-lg-4 col-md-6 member" data-aos="fade-up" data-aos-delay="600">
+            <div class="member-img">
+              <img src="assets/img/team/ben.png" class="img-fluid" alt="">
+              <div class="social">
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="member-info text-center">
+              <h4>Benedict LUBEMBELA Lumbex</h4>
+
+              <p>Chargé des opérations et Logistique</p>
+            </div>
+          </div>
         </div>
-
       </div>
+    </section> -->
 
-    </section><!-- /Team Section -->
 
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section dark-background">
@@ -707,9 +730,9 @@
         <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-xl-10">
             <div class="text-center">
-              <h3>Appel à l'action</h3>
-              <p>Si vous êtes intéressé et que vous voulez contribuer à la vision de Sakhâ FBI en tant que partenaire(personne, ménage, supermarché, organisation,etc.) vous pouvez nous contacter ici.</p>
-              <a class="cta-btn" href="#" onclick="openGmail()">Cliquez-ici</a>
+              <h3 data-key="call">Appel à l'action</h3>
+              <p data-key="call_1">Si vous êtes intéressé et que vous voulez contribuer à la vision de Sakhâ FBI en tant que partenaire(personne, ménage, supermarché, organisation,etc.) vous pouvez nous contacter ici.</p>
+              <a class="cta-btn" href="#" onclick="openGmail()" data-key="clique_ici">Cliquez-ici</a>
             </div>
           </div>
         </div>
@@ -722,8 +745,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2 data-key="contact">Contact</h2>
+        <p data-key="contact_1">Vous pouvez nous trouvez en vous référant sur ces informations.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -736,7 +759,7 @@
               <div class="col-md-6">
                 <div class="info-item" data-aos="fade" data-aos-delay="200">
                   <i class="bi bi-geo-alt"></i>
-                  <h3>Adresse</h3>
+                  <h3 data-key="adress">Adresse</h3>
                   <p>A.. Du Gouverneur</p>
                   <p>Bukavu, BP. 285</p>
                 </div>
@@ -745,7 +768,7 @@
               <div class="col-md-6">
                 <div class="info-item" data-aos="fade" data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
-                  <h3>Appelez-nous </h3>
+                  <h3 data-key="call_us">Appelez-nous </h3>
                   <p>+243 996 711 486</p>
                   <p>+243 852 766 681</p>
                 </div>
@@ -754,20 +777,13 @@
               <div class="col-md-6">
                 <div class="info-item" data-aos="fade" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
-                  <h3>Ecrivez-nous</h3>
+                  <h3 data-key="write_us">Ecrivez-nous</h3>
                   <p>sakhafbi@gmail.com</p>
-                  <p>contact@example.com</p>
+                  <p> </p>
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="col-md-6">
-                <div class="info-item" data-aos="fade" data-aos-delay="500">
-                  <i class="bi bi-clock"></i>
-                  <h3>Heurs d'ouverture</h3>
-                  <p>Lundi - Samedi</p>
-                  <p>8:00AM - 4:00PM</p>
-                </div>
-              </div><!-- End Info Item -->
+
 
             </div>
 
@@ -782,34 +798,32 @@
       </div>
 
     </section><!-- /Contact Section -->
-
   </main>
 
   <footer id="footer" class="footer position-relative light-background">
-
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
             <span class="sitename">Sakhâ FBI</span>
           </a>
-          <p>Si vous voulez nous suivre, les actions de Sakhâ Food Banking Initiative, vous pouvez nous suivre sur nos différents réseaux sociaux.</p>
+          <p data-key="if_following">Si vous voulez nous suivre, les actions de Sakhâ Food Banking Initiative, vous pouvez nous suivre sur nos différents réseaux sociaux.</p>
           <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com/SakhaFBI?t=xqPxjPKpr0CSWDRbJc9ihA&s=08"><i class="bi bi-twitter-x"></i></a>
+            <!-- <a href=""><i class="bi bi-facebook"></i></a> -->
+            <a href="https://www.instagram.com/sakhafbi?igsh=MW10aDluMnFpOGZyeg%3D%3D&utm_source=qr"><i class="bi bi-instagram"></i></a>
+            <!-- <a href=""><i class="bi bi-linkedin"></i></a> -->
           </div>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Liens utiles</h4>
+          <h4 data-key="link_useless">Liens utiles</h4>
           <ul>
-            <li><a href="index.html#hero">Acceuil</a></li>
-            <li><a href="index.html#about">Apropos</a></li>
-            <li><a href="index.html#services">Objectif</a></li>
-            <li><a href="index.html#portfolio">Activités</a></li>
-            <li><a href="index.html#team">Equipe</a></li>
+            <li><a href="index.html#hero" data-key="home">Accueil</a></li>
+            <li><a href="index.html#about" data-key="about">A propos</a></li>
+            <li><a href="index.html#services" data-key="objectifs">Objectif</a></li>
+            <li><a href="index.html#portfolio" data-key="activities">Activités</a></li>
+            <!-- <li><a href="index.html#team" data-key="team">Equipe</a></li> -->
           </ul>
         </div>
 
@@ -818,16 +832,16 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4>Services</h4>
           <ul>
-            <li><a href="#">Collecte</a></li>
-            <li><a href="#">Stockage</a></li>
-            <li><a href="#">Concervation</a></li>
-            <li><a href="#">Distribution</a></li>
+            <li><a href="#" data-key="serv_col">Collecte</a></li>
+            <li><a href="#" data-key="serv_stok">Stockage</a></li>
+            <li><a href="#" data-key="serv_con">Concervation</a></li>
+            <li><a href="#" data-key="serv_dist">Distribution</a></li>
        
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contactez-nous</h4>
+          <h4 data-key="contact_us">Contactez-nous</h4>
           <p>A.. Du Gouverneur</p>
           <p>Bukavu, BP. 285</p>
           <p>DR Congo</p>

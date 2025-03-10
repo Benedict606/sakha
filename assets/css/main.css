@@ -1150,11 +1150,10 @@ section,
   border-radius: 7px;
   border-color: white;
   border-width: 0px;
-
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
 }
 
 .btn-get-started-c:hover{
